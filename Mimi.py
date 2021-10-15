@@ -1,0 +1,13 @@
+a="Hello Mimi"
+x=a.lower()
+y=a.upper()
+z=a.replace("m","s")
+p=a.split(" , ")
+q=a.strip()
+r=len(a)
+print(x)
+print(y)
+print(z)
+print(p)
+print(q)
+print(r)

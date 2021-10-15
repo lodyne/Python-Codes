@@ -1,0 +1,8 @@
+print("Whats your name")
+x=input()
+print("How old are you")
+x=input()
+print("What course do you take")
+x=input()
+print("What your favourite team")
+x=input()
