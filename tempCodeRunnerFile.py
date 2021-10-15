@@ -1,6 +1,12 @@
-print(std2.display_fullname())
-print(std3.display_fullname())
+def beautify(function):
+#     def inner():
+#         print("i'm decorated")
+#         function()
+#     return inner
+    
+# def normal():
+#     print("i'm normal")
+# # normal()
 
-print(Student.display_fullname(std1))
-print(Student.display_fullname(std2))
-print(Student.display_fullname(std3))
+# new = beautify(normal)
+# new()
