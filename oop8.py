@@ -68,8 +68,11 @@ class BankInfo:
 class Main:
     #object=Account("")
     object=Customer('')
-    #print(object.balance)
 
+    new = BankInfo()
+    #print(object.balance)
+    
+    new.login()
     object.createAccount()
     object.showAccount()
     object.deposit()

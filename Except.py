@@ -1,5 +1,8 @@
 try:
-    print(x)
+    x=19
+    y=0
+    z=x/y
+    print(z)
 except:
     print("Error")
 finally:
