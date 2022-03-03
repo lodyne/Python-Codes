@@ -25,9 +25,12 @@ new()
 
 # 4 - A function can passed to another function as argument
 
-def remainder(function):
+def remainder(daily):
+    # daily = "Don't forget to pray"
+    # print(daily)
     print("Don't forget to pray")
-    function()
+    daily()
+
 def reply():
     print("I don't remember to forget")
-remainder(reply)
+print(remainder(reply))
