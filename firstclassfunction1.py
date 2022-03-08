@@ -13,7 +13,7 @@ def power(num1,num2):
     return num1 ** num2
 
 # assigning INSTANCE to function
-result1= power(2,3)
+result1 = power(2,3)
 print(power)
 print(result1)
 
@@ -24,7 +24,6 @@ def square(num):
 
 # store the function in a variable
 result2 = square
-print(result2)
 print(result2(3))
 
 # 3: You can pass the function as a parameter to another function.
@@ -34,7 +33,10 @@ def morning():
 def noon():
     return "good afternoon"
 
-# high order function    
+
+# *Higher-Order Function:
+# A function that receives another function as an argument or that returns a new function or both. 
+# Higher-order functions are only possible because of the First-class function. 
 def greetings(function):
     greet = function()
     print(greet)
@@ -69,5 +71,26 @@ def outer_power(num1):
 
 power=outer_power(4)
 print(power(3))
+
+# 5: You can store them in data structures
+
+def plusOne(num):
+    return num + 1
+
+def plusTwo(num):
+    return num + 2
+
+def plusThree(num):
+    return num + 3
+
+list_function = [plusOne,plusTwo,plusThree]
+
+for i in list_function:
+    print(i(2))
+
+print(plusOne)
+print(plusTwo)
+print(plusThree)
+
 
 

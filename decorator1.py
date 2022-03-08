@@ -3,7 +3,8 @@
 def function():
     print(" I am function")
 function()
-object = function() # create an object
+object = function # create an object
+object()
 
 # 2- A function can be nested within another function
 

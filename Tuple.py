@@ -1,4 +1,4 @@
-#A tuple is a collection which is ordered and unchangeable(immutable).
+# A tuple is a collection which is ordered and unchangeable(immutable).
 x=("banana","cherry","nanasi",7,9,0)         
 print(x)                                    #In Python tuples are written with round brackets.
 y=tuple(("soft","tele","cs","32","java"))   #It is also possible to use the tuple() constructor to make a tuple.
