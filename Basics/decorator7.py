@@ -1,15 +1,14 @@
 def beautify(function):
     def inner():
-        new = function("mimi")
-        print(new)
-        
+        new = "mimi"
+        return function(new)
     return inner
     
-def normal():
-    print("i'm normal")
+def normal(old):
+    old = "wewe"
+    print(old)
 object = beautify(normal)
-print(object)
-object
+object()
 
 # def beautify(function):
 #     def inner():
