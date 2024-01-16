@@ -9,6 +9,7 @@
 def outer():
     sms = "hey nambie" 
 
+    # closure
     def inner():
         print(sms)
     return inner
@@ -64,9 +65,16 @@ obj2("Good AfterNoon")
 The criteria that must be met to create closure in Python are summarized below:
 
 ~ We must have a nested function (function inside a function).
-~ The nested function must refer to a value defined in the enclosing function.
-~ The enclosing function must return the nested function.
+~ The nested function must refer to a value defined in the enclosing (outer) function.
+~ The enclosing (outer) function must return the nested function.
 
 '''
 
+def enclosing():
+    num = 'Number1'
+    def inner():
+        print(num)
+    return inner
 
+object = enclosing()
+print(object())
