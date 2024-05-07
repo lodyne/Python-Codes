@@ -1,6 +1,3 @@
-from tokenize import maybe
-
-
 print("Enter a pallidrome word")
 word = input()
 my_string = word.casefold()
